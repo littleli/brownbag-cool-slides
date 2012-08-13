@@ -6,6 +6,23 @@
     <meta charset=utf-8>
     <script
       src="../slides.js"></script>
+    <script src="../jquery-1.8.0.min.js"></script>
+    <script>
+	function print() {
+	    $("body").css("background", "none");
+	    $("article").removeClass("far-past");
+	    $("article").removeClass("past");
+	    $("article").removeClass("current");
+	    $("article").removeClass("next");
+	    $("article").removeClass("far-next");
+	    $("*.to-build").removeClass("to-build");
+	    $("article").css("display", "block");
+	    $("article").css("top", "0");
+	    $("article").css("left", "0");
+	    $("article").css("margin", "0 0 9em 0");
+	    $("article").css("position", "relative");
+	}
+    </script>
   </head>
   
   <style>
